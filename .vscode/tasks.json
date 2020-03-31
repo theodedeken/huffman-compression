@@ -1,0 +1,58 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build compression 1.0",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "-g",
+                "${workspaceFolder}/compression-1.0/compressie1.c",
+                "${workspaceFolder}/compression-1.0/datastructs.c",
+                "${workspaceFolder}/compression-1.0/datastructs.h",
+                "${workspaceFolder}/compression-1.0/file_buffer.c",
+                "${workspaceFolder}/compression-1.0/file_reader.c",
+                "${workspaceFolder}/compression-1.0/file_writer.c",
+                "${workspaceFolder}/compression-1.0/huffman.c",
+                "${workspaceFolder}/compression-1.0/huffman_map.c",
+                "${workspaceFolder}/compression-1.0/huffman_queue.c",
+                "${workspaceFolder}/compression-1.0/huffman_tree.c",
+                "${workspaceFolder}/compression-1.0/lz77.c",
+                "${workspaceFolder}/compression-1.0/window.c",
+                "-o",
+                "${workspaceFolder}/out/compression_1.0"
+            ],
+            "options": {
+                "cwd": "/usr/bin"
+            },
+            "problemMatcher": []
+        },
+        {
+            "type": "shell",
+            "label": "Build compression 2.0",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "-g",
+                "${workspaceFolder}/compression-2.0/compressie2.c",
+                "${workspaceFolder}/compression-2.0/datastructs.h",
+                "${workspaceFolder}/compression-2.0/file_buffer.c",
+                "${workspaceFolder}/compression-2.0/file_reader.c",
+                "${workspaceFolder}/compression-2.0/file_writer.c",
+                "${workspaceFolder}/compression-2.0/huffman.c",
+                "${workspaceFolder}/compression-2.0/huffman_map.c",
+                "${workspaceFolder}/compression-2.0/huffman_queue.c",
+                "${workspaceFolder}/compression-2.0/huffman_tree.c",
+                "${workspaceFolder}/compression-2.0/long_buffer.c",
+                "${workspaceFolder}/compression-2.0/predictive_difference.c",
+                "${workspaceFolder}/compression-2.0/predictive_difference.h",
+                "${workspaceFolder}/compression-2.0/prediff_window.c",
+                "-o",
+                "${workspaceFolder}/out/compression_2.0"
+            ],
+            "options": {
+                "cwd": "/usr/bin"
+            },
+            "problemMatcher": []
+        }
+    ],
+    "version": "2.0.0"
+}
